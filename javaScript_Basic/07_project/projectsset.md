@@ -1,6 +1,6 @@
 # project related to DOM
 
-## project link
+## project 1
 
 ```javasript
     console.log("hello")
