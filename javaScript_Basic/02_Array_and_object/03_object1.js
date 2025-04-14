@@ -17,7 +17,7 @@ const jsUser = {
 
 //Object.freeze(jsUser)
 jsUser.age = 20
-console.log(jsUser.age)
+//console.log(jsUser.age)
 
 jsUser.greeting = function(){
     console.log("hello world")

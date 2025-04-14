@@ -7,7 +7,7 @@
 //         break;
 // }
 
-const month = "march"
+const month = "jan"
 
 switch (month) {
     case "jan":

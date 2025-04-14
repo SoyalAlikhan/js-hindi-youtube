@@ -21,13 +21,13 @@ const targer ={a:1,b:2}
 const source = {c:3,d:4}
 const obj3 = {e:5,f:6}
 
-//const obj4 = {targer,source,obj3}
-//console.log(obj4);
+// const obj4 = {targer,source,obj3}
+// console.log(obj4);
 
-//const obj4 = Object.assign({},targer,source,obj3)
-//console.log(obj4);
+// const obj4 = Object.assign({},targer,source,obj3)
+// console.log(obj4);
 
-const obj4 = {...targer, ...source, ...obj3}
+// const obj4 = {...targer, ...source, ...obj3}
 // console.log(obj4)
 
 // console.log(tinderUser)
@@ -50,7 +50,7 @@ const users = [
         email: "h@gmail.com"
     },
 ]
-//console.log(users[0].email)
+//console.log(users[0])
 
 const course = {
     courseName : "BCA",
@@ -68,8 +68,5 @@ console.log(instructor)
 //     "price": "free"
 // }
 
-[
-    {},
-    {},
-    {}
-]
+// 
+

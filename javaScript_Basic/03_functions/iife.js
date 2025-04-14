@@ -7,4 +7,4 @@
 
 ( (name)=>{
     console.log(`DB CONNETED TWO ${name}`)
-})("Soyal")
+})("Soyal")                                                             

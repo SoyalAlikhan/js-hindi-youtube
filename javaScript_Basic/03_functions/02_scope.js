@@ -52,7 +52,8 @@ function addone(num){
 
 
 
-addTwo(5)
+//addTwo(5) error 
 const addTwo = function(num){
     return num + 2
 }
+console.log( addTwo(5));
