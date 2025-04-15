@@ -39,3 +39,17 @@ const newArr = myArr.join()
 const myn2 = myArr.splice(1, 3)
 console.log("C ", myArr);
 console.log(myn2);
+
+/* you can also declare array like this */
+let array_var = [];
+    array_var[0] = "first value";
+    array_var[1] = "other value";
+
+    /* now skip the array index via associating with new index */
+    array_var[20] = "Another value";
+    console.log(`Array Values : ${array_var} <br>`);
+    console.log(`Array length : ${array_var.length} <br>`);
+
+     /* no manually manupulate the length */
+     array_var.length = 90;
+     console.log(`New array length : ${array_var.length}`);
