@@ -1,3 +1,5 @@
+// Reduce function
+
 const myNums = [1,2,3,4]
 
 const myTotal = myNums.reduce(function(acc,curr){
@@ -28,7 +30,19 @@ const shoppingCart = [
  //console.log(`Total Price Of All Course Is: ${totalPriceOfAllCourse}`);
 
 
-      
+// JS Variable Length Argument Function Example Using arguments Object
+ function test_fun()
+ {
+   console.log(`Total passed arguments : ${arguments.length} `);
+   for(index in arguments) {
+     console.log(`Index ${index} Value : ${arguments[index]} `);  //but Array function like map() या forEach() नहीं use कर सकते हैं।
+   }
+
+   /* accessing individual  */
+   console.log(`First argument: ${arguments[0]} `);
+ }
+ /*call function by passig some arrgument*/
+ test_fun(46767,67,678,8,8,6532);
 
     
     

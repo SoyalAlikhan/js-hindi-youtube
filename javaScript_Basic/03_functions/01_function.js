@@ -51,7 +51,7 @@ const user = {
 }
 
 function handleObject(anyobject){
-    console.log(`Username is ${anyobject.username} and price is ${anyobject.price}`);
+    //console.log(`Username is ${anyobject.username} and price is ${anyobject.price}`);
 }
 
 // handleObject(user)
@@ -68,3 +68,40 @@ function returnSecondValue(getArray){
 
 // console.log(returnSecondValue(myNewArray));
 //console.log(returnSecondValue([200, 400, 500, 1000]));
+
+// function test_fun()
+//       {
+//         console.log(`Total passed arguments : ${arguments.length} <br>`);
+//         for(index in arguments) {
+//           console.log(`Index ${index} Value : ${arguments[index]} <br>`);
+//         }
+
+//         /* accessing individual  */
+//         console.log(`First argument: ${arguments[0]} <br>`);
+//       }
+//       /*call function by passig some arrgument*/
+//       test_fun(46767,67,678,8,8,6532);
+
+// recursive function
+function print_number(number)
+      {
+        /*print number*/
+        //console.log(number );
+      
+        /*increment by 1*/
+        number += 5;
+      
+        /*if number is less than 100 then call the function*/
+        if(number <= 100)
+        {
+          /*call the function*/
+          print_number(number);
+        }
+      }
+      print_number(0)
+
+      // Prime number using recursion
+      let fact = function(num){
+         return num <= 1 ? 1 : num * fact(num-1)
+      }
+      console.log(fact(5)); 
