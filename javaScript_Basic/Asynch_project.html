@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="h1">Async function</h1>
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+    <!--<p onmouseover="this.style.color='red'">Hover over me</p>
+    <p onmouseout="this.style.color='black'">Move mouse away</p>-->
+</body>
+<script>
+    // setTimeOut And clearTimeOut 
+    // const changeText = function(){
+    //     document.querySelector('#h1').innerHTML = 'Hello World';
+    // }
+    
+    // let setTimeChangeText ;
+    // document.querySelector('#start').addEventListener('click',function(){
+    //     setTimeChangeText = setTimeout(changeText,2000)
+    // })
+
+    // document.querySelector('#stop').addEventListener('click',function(){
+    //     clearTimeout(setTimeChangeText);
+    //     console.log('Stopped');   
+    // })
+
+    // setIntervel And clearIntervel
+
+    // let a = Math.floor(Math.random()*16)
+    // console.log(a);
+    
+    const randomColor = function(){
+        const hex = '0123456789ABCDEF'
+        let color = '#'
+        for(i=0;i<6;i++){
+            color += hex[Math.floor(Math.random()*16)]
+        }
+        return color
+    }
+    let setColorChange ;
+    let startchangingColor = function(){
+        let changeColor = function () {
+            document.body.style.backgroundColor = randomColor();
+        }
+        if(!setColorChange){
+            setColorChange = setInterval(changeColor,1000) 
+        }
+    }
+    let stopchangingColor = function(){
+        clearInterval(setColorChange);
+        //console.log('Stopped');   
+        setColorChange = null;
+    }
+    document.querySelector('#start').addEventListener('click',startchangingColor)
+    document.querySelector('#stop').addEventListener('click',stopchangingColor)
+    
+</script>
+
+</html>
