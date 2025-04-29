@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lexical Scope and Closure</title>
+</head>
+<body>
+    <button id="orange">Orange</button>
+    <button id="green">Green</button>
+</body>
+<script>
+   /*
+    // Lexical Scope
+    function outter() {
+        let name = "soyal"
+        function inner() {
+            let a = 'khan'
+            console.log(name);
+        }
+        //console.log(a) //error
+        function inner2() {
+            console.log(name);
+        }
+        inner()
+        inner2()
+    }
+    outter()
+    // inner() //error   */
+
+
+
+
+    // Closure -> return inner function in a Lexical Scope
+    // Closure me inner function ko return krne pr pura Lexical Scope return hota h
+    function outter() {
+        let name = "soyal"
+        function dislpayName() {
+            console.log(name);
+        }
+        return dislpayName;
+    }
+    //let myName = outter();
+    //myName()
+</script>
+<script>
+    // document.getElementById("orange").onclick = function() {
+    //     document.body.style.backgroundColor = `orange`;
+    // }
+    // document.getElementById("green").onclick = function() {
+    //     document.body.style.backgroundColor = `green`;
+    // }
+    
+
+    //Closure
+    function clickHandler(color) {
+        //document.body.style.backgroundColor = `${color}`;
+        return function() {  
+            document.body.style.backgroundColor = `${color}`;
+        }
+    }
+    document.getElementById("green").onclick = clickHandler('green')
+    document.getElementById("orange").onclick = clickHandler('orange')
+</script>
+</html>
