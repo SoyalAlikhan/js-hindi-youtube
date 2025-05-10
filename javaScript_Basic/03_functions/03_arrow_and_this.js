@@ -19,8 +19,7 @@ function chai(){
     let username = "hitesh"
     console.log(this);
 }
-
-//chai()
+chai()
 
 // const chai = function () {
 //     let username = "hitesh"
